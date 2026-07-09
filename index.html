@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav-bar">
+    <header role="banner">
+      <nav role="navigation" class="nav-bar">
         <a href="#home">Home</a>
         <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact-us">Contact</a>
       </nav>
     </header>
     <main>
@@ -20,20 +20,36 @@
         <h1 class="main-header">Davon's Accessible Photography Co.</h1>
       </div>
       <h3 class="port-title">My Portfolio</h3>
-      <p class="tag-line">I catch your memories, while your in motion!</p>
+      <p class="tag-line">I'm catch your memories, while you're in motion!</p>
       <section class="portfolio-grid">
-        <img src="./lamar_jackson8 03.png" alt="lamar-jackson1" />
-        <img src="./lamar_jackson8 02.png" alt="" />
-        <img src="./lamar_jackson8 04.png" alt="" />
-        <img src="./gleague hawks 001.png" alt="" />
-        <img src="./gleague 001.png" alt="" />
-        <img src="./gleage 002.png" alt="" />
-        <img src="./darrell dj 002.png" alt="" />
-        <img src="./darrell dj 001.png" alt="" />
-        <img src="./lamar_jackson8.png" alt="" />
+        <img src="./lamar_jackson8 03.png" alt="lamar jackson pic 1" />
+        <img src="./lamar_jackson8 02.png" alt="lamar jackson pic 2" />
+        <img src="./lamar_jackson8 04.png" alt="lamar jackson pic 3" />
+        <img
+          src="./gleague hawks 001.png"
+          alt="G League Atlanta Hawks Basketball Player"
+        />
+        <img src="./gleague 001.png" alt="G League Basketball Player" />
+        <img src="./gleage 002.png" alt="G League Basketball Player 2" />
+        <img
+          src="./darrell dj 002.png"
+          alt="Arizona Cardinals Football Player"
+        />
+        <img
+          src="./darrell dj 001.png"
+          alt="Arizona Cardinals Football Player 2"
+        />
+        <img src="./lamar_jackson8.png" alt="lamar jackson pic 4" />
       </section>
       <div class="book-me-div">
-        <button type="submit" class="book-me">Book Me</button>
+        <button
+          role="button"
+          type="submit"
+          class="book-me"
+          aria-label="click to book me"
+        >
+          Book Me
+        </button>
       </div>
       <article class="about-me">
         <h2 class="about-me">About Me</h2>
@@ -44,38 +60,45 @@
       </article>
     </main>
     <footer class="footer">
-       <h2>Contact Us</h2>
+      <h2>Contact Us</h2>
       <form id="contact-us">
-       
         <div class="form-row">
-            <label for="full-name">Full Name:</label>
-            <input
-              type="text"
-              placeholder="Enter Full Name"
-              id="full-name"
-              class="message-row"
-            />
+          <label for="full-name">Full Name:</label>
+          <input
+            type="text"
+            placeholder="Enter Full Name"
+            id="full-name"
+            class="message-row"
+          />
         </div>
         <div class="form-row">
-            <label for="email" class="form-row">Email:</label>
-            <input
-              type="email"
-              placeholder="Enter Email"
-              id="email"
-              class="message-row"
-            />
+          <label for="email" class="form-row">Email:</label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            id="email"
+            class="message-row"
+          />
         </div>
         <div class="form-row message-row">
-            <label for="message" class="form-row">Message:</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="How can I help you?"
-              rows="8"
-              cols="48"
-              class="message-row"
-            ></textarea>
+          <label for="message" class="form-row">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="How can I help you?"
+            rows="8"
+            cols="48"
+            class="message-row"
+          ></textarea>
         </div>
+        <button
+          role="button"
+          type="submit"
+          class="send-message"
+          aria-label="Click to contact us"
+        >
+          Send Message
+        </button>
       </form>
     </footer>
   </body>

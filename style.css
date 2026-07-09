@@ -1,10 +1,21 @@
+body {
+  display: block;
+  margin: 0;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  background-color: rgb(43, 46, 48);
+  color: antiquewhite;
+}
+
+.main-header {
+  margin: auto;
 }
 
 a {
   text-decoration: none;
+  color: antiquewhite;
 }
 
 .portfolio-grid {
@@ -12,11 +23,14 @@ a {
   grid-template-columns: 480px 480px 480px;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
+  margin: auto;
+  justify-content: center;
 }
 
 .portfolio-grid img {
   width: 100%;
   aspect-ratio: 4/5;
+  box-shadow: 5px 5px 20px;
 }
 
 @media (max-width: 1440px) {
@@ -24,12 +38,15 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    margin: auto;
+    justify-content: center;
   }
   .portfolio-grid img {
     width: 100%;
     aspect-ratio: 4/5;
     grid-column: auto;
     grid-row: auto;
+    box-shadow: 5px 5px 20px;
   }
 }
 
@@ -38,12 +55,15 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
+    margin: auto;
+    justify-content: center;
   }
   .portfolio-grid img {
     width: 100%;
     aspect-ratio: 4/5;
     grid-column: auto;
     grid-row: auto;
+    box-shadow: 5px 5px 20px;
   }
 }
 
@@ -52,6 +72,7 @@ img[alt="profile-pic"] {
   border-radius: 50%;
   margin-top: 10px;
   margin-right: 50px;
+  border: solid 4px antiquewhite;
 }
 .logo-intro {
   display: flex;
@@ -70,9 +91,9 @@ img[alt="profile-pic"] {
 }
 
 .form-row {
-display: flex;
-align-items: center;
-margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .messsage-row {
@@ -89,4 +110,15 @@ margin-bottom: 15px;
 
 .about-me p {
   margin-bottom: 100px;
+}
+footer {
+  background-color: rgb(43, 46, 48);
+  border-top: solid 2px antiquewhite;
+  color: antiquewhite;
+  margin: 0;
+}
+.send-message {
+  display: block;
+  padding: 0 10px;
+  margin-left: 90px;
 }
