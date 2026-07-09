@@ -72,7 +72,8 @@ img[alt="profile-pic"] {
   border-radius: 50%;
   margin-top: 10px;
   margin-right: 50px;
-  border: solid 4px antiquewhite;
+  border: solid 2px antiquewhite;
+  box-shadow: 1px 1px 5px black;
 }
 .logo-intro {
   display: flex;
@@ -86,10 +87,18 @@ img[alt="profile-pic"] {
 }
 .book-me {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 210px;
   align-items: center;
+  background-color: rgb(43, 46, 48);
+  color: antiquewhite;
+  border-radius: 3%;
+  font-weight: 500;
+  font-size: large;
+  box-shadow: 3px 3px 5px black;
 }
-
+.book-me:hover {
+  transform: translateY(-3px);
+}
 .form-row {
   display: flex;
   align-items: center;
