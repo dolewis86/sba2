@@ -3,7 +3,6 @@ README.md
 
 ## Student Information
 * **Name:** [Davon Lewis]
-* **Student ID:** [Your ID]
 * **Course:** [RTT 2026 27]
 
 ## Description
