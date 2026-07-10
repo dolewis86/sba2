@@ -131,3 +131,44 @@ footer {
   padding: 0 10px;
   margin-left: 90px;
 }
+
+.box {
+  background-color: antiquewhite;
+  border-radius: 3%;
+  box-shadow: 3px 3px 10px;
+}
+.about-me-grid {
+  display: grid;
+  grid-template-columns: 360px 360px 360px 360px;
+  grid-template-rows: 360px 360px;
+  gap: 1em;
+  grid-template-areas:
+    "box-1 box-2 box-2 box-3"
+    "box-1 box-4 box-5 box-5";
+}
+
+@media (max-width: 1440px) {
+  .about-me-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 360px 360px 360px;
+    gap: 1em;
+    grid-template-areas:
+      "box-1 box-2 box-2"
+      "box-1 box-4 box-3"
+      "box-5 box-5 box-3";
+  }
+}
+
+@media (max-width: 1080px) {
+  .about-me-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 360px 360px 360px 360px;
+    gap: 1em;
+    grid-template-areas:
+      "box-1 box-2"
+      "box-1 box-2"
+      "box-4 box-4"
+      "box-5 box-3"
+      "box-5 box-3";
+  }
+}
