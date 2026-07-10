@@ -172,3 +172,10 @@ footer {
       "box-5 box-3";
   }
 }
+
+.footer-more {
+display: flex;
+flex-direction: column;
+justify-content: right; 
+margin-bottom: 200px;
+}
