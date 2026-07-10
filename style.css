@@ -137,6 +137,23 @@ footer {
   border-radius: 3%;
   box-shadow: 3px 3px 10px;
 }
+a {
+  display: flex;
+}
+.box-4 {
+  background-color: rgb(43, 46, 48);
+}
+
+.box-4:hover {
+  cursor: pointer;
+}
+.invite-me {
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+}
 .about-me-grid {
   display: grid;
   grid-template-columns: 360px 360px 360px 360px;
@@ -147,6 +164,60 @@ footer {
     "box-1 box-4 box-5 box-5";
 }
 
+a .invite-me {
+  grid-area: box-4;
+}
+.about-me-grid .overlay-text {
+  grid-area: box-2;
+}
+
+.overlay-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(43, 46, 48);
+}
+
+.about-me-grid .overlay-text5 {
+  grid-area: box-5;
+}
+
+.overlay-text5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(43, 46, 48);
+}
+
+.about-me-grid .dj-catch {
+  grid-area: box-1;
+}
+
+.dj-catch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+  object-position: center;
+}
+.about-me-grid .lamar-throw {
+  grid-area: box-3;
+}
+.lamar-throw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+}
 @media (max-width: 1440px) {
   .about-me-grid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -174,8 +245,8 @@ footer {
 }
 
 .footer-more {
-display: flex;
-flex-direction: column;
-justify-content: right; 
-margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-bottom: 200px;
 }
